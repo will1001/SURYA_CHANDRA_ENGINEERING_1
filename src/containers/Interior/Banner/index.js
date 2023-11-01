@@ -50,18 +50,17 @@ const Banner = () => {
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   const handleOnChange = (e) => {
-    console.log(e);
-    // let value = "";
+    // let value = '';
     // if (e.target.value.match(emailRegex)) {
     //   if (e.target.value.length > 0) {
     //     value = e.target.value;
-    //     setState({ ...state, email: value, valid: "valid" });
+    //     setState({ ...state, email: value, valid: 'valid' });
     //   }
     // } else {
     //   if (e.target.value.length > 0) {
-    //     setState({ ...state, valid: "invalid" });
+    //     setState({ ...state, valid: 'invalid' });
     //   } else {
-    //     setState({ ...state, valid: "" });
+    //     setState({ ...state, valid: '' });
     //   }
     // }
   };
@@ -92,9 +91,7 @@ const Banner = () => {
                 icon={<Icon icon={iosEmailOutline} />}
                 iconPosition="left"
                 required={true}
-                onChange={(e) => {
-                  handleOnChange(e);
-                }}
+                onChange={handleOnChange}
                 aria-label="email"
               />
               <ButtonGroup>
@@ -103,7 +100,10 @@ const Banner = () => {
                   colors="primaryWithBg"
                   title="Kontak Kami"
                   onClick={() => {
-                    window.open("mailto: abc@example.com", "_blank");
+                    window.open(
+                      "mailto: suryachandraengineering@gmail.com",
+                      "_blank"
+                    );
                   }}
                 />
                 <Button
